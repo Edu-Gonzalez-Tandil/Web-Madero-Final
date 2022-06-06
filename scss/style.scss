@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@700&display=swap');
+
+$body: red;
+
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    background-image: url(../img/fondomadera.jpg);
+    position: relative;
+}
+
+header{
+    nav{
+        display: grid;
+        justify-content: space-around;
+    }
+}
+
+div{
+    .carouselslide{
+        margin: 20px;
+    }
+}
+
+div {
+    section{
+        h1{
+            text-align: center;
+        }
+    }
+}
+
+.quienes-somosvideo {
+    padding: 8px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.info-empresa {
+    padding: 8px;
+}
+
+.carrete-1 {
+    display: grid;
+    gap: 16px;
+    padding: 16px;
+    grid-auto-flow: dense;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    .galeria-img {
+        display: flex;
+        justify-content: center;
+        img {
+            width: 300px;
+            height: 300px;
+            border-radius: 4px;
+        }
+    }
+}
+
+.section-ubicacion {
+    iframe {
+        width: 100%;
+        min-height: 600px;
+    }
+}
+
+.seccion-titulo, .titulo-contacto {
+    text-align: center;
+}
+
+.formulario-contacto {
+    max-width: 300px;
+    margin-inline: auto;
+    ul {
+        @include reset-list;
+        padding: 8px;
+    }
+    li {
+        display: flex;
+        flex-direction: column;
+        margin: 8px 0;
+    }
+
+    button {
+        
+    }
+}
+
+footer{
+    display: grid;
+    background-color: black;
+    color: white;
+}
